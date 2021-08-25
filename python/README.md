@@ -6,7 +6,7 @@ Use `git clone` to clone the repository locally, then change the remote, please 
 
 ```bash
 git remote set-url origin <path-to-your-blank-repository>
-git push -u origin <branch-name>
+git push -u origin <branch-name> 
 ```
 
 ## Setup
