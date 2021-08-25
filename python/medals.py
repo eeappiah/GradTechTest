@@ -20,7 +20,17 @@ medalResults = [
 def createMedalTable(results):
     # Use the results object above to create a medal table
     # The winner gets 3 points, second place 2 points and third place 1 point
-    return
+    my_list = [winners["podium"] for winners in medalResults]
+    my_dictionary = dict()
+
+    for entry in my_list:
+        for value in entry:
+            country = value[2:]
+            position = value[:1]
+            if country not in my_dictionary.keys():
+                my_dictionary[country] = 0
+            my_dictionary[country] += 4 - int(position)
+    return my_dictionary
 
 
 def test_function():
