@@ -16,13 +16,19 @@ medalResults = [
         "podium": ["1.USA", "2.France", "3.Brazil"]
     }
 ]
+print(medalResults)
 
 def createMedalTable(results):
     # Use the results object above to create a medal table
     # The winner gets 3 points, second place 2 points and third place 1 point
+
+    # Creates a list of the podium countries taken for medalResults for each category
     my_list = [winners["podium"] for winners in medalResults]
+    # Empty dictionary for putting in end result
     my_dictionary = dict()
 
+    # For loop which takes in each position of the countries and adds it to the dictionary if it is not there and
+    # adds the score accordingly
     for entry in my_list:
         for value in entry:
             country = value[2:]
