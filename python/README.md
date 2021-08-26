@@ -1,4 +1,4 @@
-# Grad Tech Test - Python
+# grad Tech Test - Python
 
 ## Clone this repository
 
