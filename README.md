@@ -5,4 +5,4 @@ In this repository, you'll find my solution in the python folder called medals.p
 
 Kind Regards  
 
-Earl Appiah
+Earl Appiah 
